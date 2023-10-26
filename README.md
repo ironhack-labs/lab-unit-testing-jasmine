@@ -20,7 +20,6 @@ This exercise allows you to practice and apply the concepts and techniques taugh
 
 Upon completion of this exercise, you will be able to:
 
-- Set up a testing environment using Jasmine in the browser
 - Use Test-Driven Development (TDD) approach to write JavaScript programs
 - Create unit tests for your JavaScript code using Jasmine
 
@@ -41,14 +40,44 @@ Let's do some unit testing! 🧪
 
 
 
-### Jasmine
-
-For this lab, you will be using Jasmine to write your tests.
-To make things easier, we have already set up the testing environment for 
-you. You will be using the `SpecRunner.html` file to run your tests. To open the file, you can use the Live Server extension in VS Code. All the JavaScript files and the test files are already linked to the `SpecRunner.html` file, so you don't need to worry about that.
 <br>
 
-In case you need a refresher on the Jasmine syntax, check this [*Jasmine Tutorial*](https://jasmine.github.io/tutorials/your_first_suite) *(10 min. read)*.
+## Requirements
+
+- Fork this repo.
+- Clone this repo.
+
+<br>
+
+## Submission
+
+- Upon completion, run the following commands:
+
+```bash
+git add .
+git commit -m "Solved lab"
+git push origin master
+```
+
+- Create a Pull Request and submit your assignment
+
+<br>
+
+
+
+## Instructions
+
+### Jasmine
+
+For this lab, you will be using Jasmine to write your tests.  We have already set up the testing environment for you to make things easier. All the JavaScript files and the test files are already linked to the `SpecRunner.html` file, so you don't need to worry about that.
+
+
+
+You will be using the `SpecRunner.html` file to run your tests. To open the file, you can use the Live Server extension in VS Code.
+
+<br>
+
+If you need a refresher on the Jasmine syntax, check this [*Jasmine Tutorial*](https://jasmine.github.io/tutorials/your_first_suite) *(10 min. read)*.
 
 <br>
 
@@ -65,8 +94,6 @@ During each iteration, your task will be first to write the unit tests and then 
 <br>
 
 
-
-## Instructions
 
 ### Iteration 1 | Getting Started
 
@@ -124,7 +151,7 @@ Your task in this iteration is to review the unit test in  `tests/add.test.js` a
 
 **Write the Code to Make the Test Pass** 
 
-8. Update the code of the `sum` function to make the new test pass.<br>Once you correctly implement the new functionality, the test should turn green 🟢.
+8. Update the code of the `add` function to make the new test pass.<br>Once you correctly implement the new functionality, the test should turn green 🟢.
 
 <br>
 
@@ -132,50 +159,106 @@ Your task in this iteration is to review the unit test in  `tests/add.test.js` a
 
 **Refactor**
 
-9. Take another look at the `sum` function. Is there anything that could be improved? Do you see any way that you could simplify the code to make it easier to read?<br>After you are done refactoring, check the tests one last time to make sure everything is still working fine after refactoring. 
+9. Take another look at the `add` function. Is there anything that could be improved? Could you somehow simplify the code to make it easier to read? 🟠<br>
+9. After you are done refactoring, check the tests one last time to make sure everything is still working fine after refactoring. 
 
 
 
 <br>
 
+<details>
+
+  <summary><b>Solution</b></summary>
+
+  <p align="center">
+    <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/add-spec.png" alt="add tests solution" width="850">
+  </p>
+
+  <br>
+
+  <p align="center">
+    <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/add.png" alt="add solution" width="850">
+  </p>
+
+
+  <br>
+
+  <hr>
+</details>
+<br>
+
+
 ----
 
 ### Iteration 2 | Divide
 
-Now that you have a better understanding of how the unit tests work, it's time to repeat the process. 🧪
+Now that you have a better understanding of how the Jasmine unit tests work, it's time to repeat the process. 🧪
 
-Following the example of the `sum` function and its unit tests, write the unit tests for the `divide` function and then implement the function. You should write your unit tests in the `tests/divide.test.js` file and your function code in the `src/divide.js` file.
+Following the example of the `add` function and its unit tests, write the unit tests for the **`divide`** function and then implement the function.
+
+
+
+Files:  **tests** - `tests/divide.test.js`  |  **code** - `src/divide.js`
+
+<br>
 
 
 
 Here are the requirements for the `divide` function:
+- The function should be defined.
 - The function should take two numbers as arguments.
 - The function should return the division of the two numbers.
-- In case any of the arguments is not provided, the function should return `undefined`.
+- The function should return `undefined` if any of the arguments is not provided
 
 <br>
 
 
 
 Here are the steps you should follow:
-1. Write the unit tests for the `divide` function in the `tests/divide.test.js` file. Make sure to include at least one test for each of the requirements listed above. You can use the unit tests for the `sum` function as a reference.
+1. Write the unit tests for the `divide` function in the `tests/divide.test.js` file. Make sure to include at least one test for each of the requirements listed above.<br>You can use the unit tests for the `add` function as a reference.
 2. Run the tests by opening the `SpecRunner.html` file using the Live Server extension. You should see that all tests are failing.
 3. Implement the function `divide` function in the `src/divide.js` file.
-4. Run the tests again. You should see that all tests are passing.
-
+4. Rerun the tests again. You should see that all tests are passing.
+5. Once the tests are passing, review the code and refactor if needed. Some questions to ask: Are there any additional edge cases that you should test for and implement in the function? If so, go ahead and repeat the process of Red-Green-Refactor until you are satisfied with the code.
 
 <br>
+
+<details>
+
+  <summary><b>Solution</b></summary>
+
+  <p align="center">
+    <img  src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/divide-spec.png" alt="divide tests solution" width="850">
+  </p>
+
+  <br>
+
+  <p align="center">
+    <img  src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/divide.png" alt="divide solution" width="850">
+  </p>
+
+  <br>
+
+  <hr>
+
+</details>
+
+<br>
+
 
 ----
 
 
 ### Iteration 3 | Calculate Area
 
-Following the same process as in the previous iteration, write the unit tests for the `calculateArea` function and then implement the function. You should write your unit tests in the `tests/calculateArea.test.js` file and your function code in the `src/calculateArea.js` file.
+Following the same process as in the previous iteration, write the unit tests for the **`calculateArea`** function and then implement the function.
 
+Files:  **tests** - `tests/calculateArea.test.js`  |  **code** - `src/calculateArea.js`
 
+<br>
 
 Here are the requirements for the `calculateArea` function:
+- The function should be defined.
 - The function should take two numbers as arguments.
 - The function should return a number representing the area of a rectangle (the product of the two arguments).
 - In case any of the arguments is not provided, the function should return `undefined`.
@@ -188,34 +271,89 @@ Remember to follow the Red-Green-Refactor cycle: **(1)** first write the tests t
 
 <br>
 
+<details>
+
+  <summary><b>Solution</b></summary>
+
+  <p align="center">
+    <img  src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/calculatearea-spec.png" alt="calculatearea tests solution" width="850">
+  </p>
+
+  <br>
+
+  <p align="center">
+    <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/caluculatearea.png" alt="calculatearea solution" width="850">
+  </p>
+
+
+  <br>
+
+  <hr>
+
+</details>
+
+<br>
 
 
 ----
 
 
-### Iteration 4 | Print Full Name
+### Bonus: Iteration 4 | Print Full Name
 
-In this iteration, your task is to write the unit tests for the `printFullName` function and then implement the function. You should write your unit tests in the `tests/printFullName.test.js` file and your function code in the `src/printFullName.js` file.
+In this iteration, your task is to write the unit tests for the **`printFullName`** function and then implement the function.
+
+Files:  **tests** - `tests/printFullName.test.js`  |  **code** - `src/printFullName.js`
+
+<br>
 
 
 
 Here are the requirements for the `printFullName` function:
+- The function should be defined.
 - The function should take one argument of type object. The object should have two properties: `firstName` and `lastName`.
-- The function should return a string with the first name and the last name separated by a space.
+- The function should return a string with the *first name* and the *last name* separated by a space.
 - In case the argument passed is not an object, the function should return `undefined`.
 - In case the `firstName` or `lastName` properties are not provided, the function should return `undefined`.
 
 <br>
 
+<details>
+
+  <summary><b>Solution</b></summary>
+
+  <p align="center">
+    <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/printfullname-spec.png" alt="printfullname tests solution"  width="850">
+  </p>
+
+  <br>
+
+  <p align="center">
+    <img  src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/printfullname.png" alt="printfullname solution" width="850">
+  </p>
+
+  <br>
+
+  <hr>
+
+</details>
+
+<br>
 
 
 ----
 
 ### Bonus: Iteration 5 | Sum Array Numbers
 
-In this iteration, your task is to write the unit tests for the `sumArrayNumbers` function and then implement the function. You should write your unit tests in the `tests/sumArrayNumbers.test.js` file and your function code in the `src/sumArrayNumbers.js` file.
+In this iteration, your task is to write the unit tests for the `sumArrayNumbers` function and then implement the function.
+
+
+
+Files:  **tests** - `tests/divide.test.js`  |  **code** - `src/divide.js`
+
+<br>
 
 Here are the requirements for the `sumArrayNumbers` function:
+- The function should be defined.
 - The function should take one argument of type array. The array should contain numbers.
 - The function should return the sum of all numbers in the array.
 - In case the argument passed is not an array, the function should return `undefined`.
@@ -223,6 +361,51 @@ Here are the requirements for the `sumArrayNumbers` function:
 
 <br>
 
-----
+<details>
+
+  <summary><b>Solution</b></summary>
+
+  <p align="center">
+    <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/sumarraynumbers-spec.png" alt="sumarraynumbers tests solution" width="850">
+  </p>
+
+  <br>
+
+  <p align="center">
+    <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/sumarraynumbers.png" alt="sumarraynumbers solution" width="850">
+  </p>
+
+  <br>
+
+  <hr>
+
+</details>
 
 <br>
+
+
+<br>
+
+Happy coding! 💙
+
+<br>
+
+## FAQs
+
+
+<details>
+  <summary>I am stuck and don't know how to solve the problem or where to start. What should I do?</summary>
+
+  <br>
+
+  If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear question about the specific issue you are facing. This will help you narrow down the problem and come up with potential solutions.
+
+  For example, is it a concept that you don't understand, or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources. 
+
+  Once you have a clear understanding of the problem, you will be able to start working toward the solution.
+
+  <br>
+
+  [Back to top](#faqs)
+
+</details>
