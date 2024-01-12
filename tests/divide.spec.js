@@ -17,5 +17,11 @@ describe("Iteration 2", () => {
     it("should return undefined if no arguments are provided", () => {
       expect(divide()).toEqual(undefined);
     });
+
+    it("should return undefined if any of the arguments is not a number", () => {
+      expect(divide(1, "a")).toEqual(undefined);
+      expect(divide("a", 1)).toEqual(undefined);
+      expect(divide("a", "b")).toEqual(undefined);
+    });
   });
 });
