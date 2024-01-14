@@ -1,5 +1,5 @@
 function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
+    if (numOne == undefined || numTwo == undefined || numOne == String || numTwo == String) {
         return undefined;
     }
 
