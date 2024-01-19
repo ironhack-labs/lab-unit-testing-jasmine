@@ -97,11 +97,11 @@ During each iteration, your task will be first to write the unit tests and then 
 
 ### Iteration 1 | Getting Started
 
-To help you get started, we have provided you with the first function `add` and the corresponding unit tests. You can find the function code in the `src/add.js` file and the unit tests in the `tests/add.test.js` file.
+To help you get started, we have provided you with the first function `add` and the corresponding unit tests. You can find the function code in the `src/add.js` file and the unit tests in the `tests/add.spec.js` file.
 
 
 
-Your task in this iteration is to review the unit test in  `tests/add.test.js` and the function code in `src/add.js` and try to understand how they work. After doing it, you should answer the following questions and complete the following tasks:
+Your task in this iteration is to review the unit test in  `tests/add.spec.js` and the function code in `src/add.js` and try to understand how they work. After doing it, you should answer the following questions and complete the following tasks:
 
 <br>
 
@@ -109,7 +109,7 @@ Your task in this iteration is to review the unit test in  `tests/add.test.js` a
 
 **Review the Tests**
 
-1. How many tests are there for the `add` function in the `add.test.js` file?
+1. How many tests are there for the `add` function in the `add.spec.js` file?
 
 
 
@@ -198,7 +198,7 @@ Following the example of the `add` function and its unit tests, write the unit t
 
 
 
-Files:  **tests** - `tests/divide.test.js`  |  **code** - `src/divide.js`
+Files:  **tests** - `tests/divide.spec.js`  |  **code** - `src/divide.js`
 
 <br>
 
@@ -215,7 +215,7 @@ Here are the requirements for the `divide` function:
 
 
 Here are the steps you should follow:
-1. Write the unit tests for the `divide` function in the `tests/divide.test.js` file. Make sure to include at least one test for each of the requirements listed above.<br>You can use the unit tests for the `add` function as a reference.
+1. Write the unit tests for the `divide` function in the `tests/divide.spec.js` file. Make sure to include at least one test for each of the requirements listed above.<br>You can use the unit tests for the `add` function as a reference.
 2. Run the tests by opening the `SpecRunner.html` file using the Live Server extension. You should see that all tests are failing.
 3. Implement the function `divide` function in the `src/divide.js` file.
 4. Rerun the tests again. You should see that all tests are passing.
@@ -253,7 +253,7 @@ Here are the steps you should follow:
 
 Following the same process as in the previous iteration, write the unit tests for the **`calculateArea`** function and then implement the function.
 
-Files:  **tests** - `tests/calculateArea.test.js`  |  **code** - `src/calculateArea.js`
+Files:  **tests** - `tests/calculateArea.spec.js`  |  **code** - `src/calculateArea.js`
 
 <br>
 
@@ -302,7 +302,7 @@ Remember to follow the Red-Green-Refactor cycle: **(1)** first write the tests t
 
 In this iteration, your task is to write the unit tests for the **`printFullName`** function and then implement the function.
 
-Files:  **tests** - `tests/printFullName.test.js`  |  **code** - `src/printFullName.js`
+Files:  **tests** - `tests/printFullName.spec.js`  |  **code** - `src/printFullName.js`
 
 <br>
 
@@ -348,7 +348,7 @@ In this iteration, your task is to write the unit tests for the `sumArrayNumbers
 
 
 
-Files:  **tests** - `tests/divide.test.js`  |  **code** - `src/divide.js`
+Files:  **tests** - `tests/sumArrayNumbers.spec.js`  |  **code** - `src/sumArrayNumbers.js`
 
 <br>
 
