@@ -18,15 +18,15 @@ describe("Iteration 3", () => {
     });
 
     it("Should return undefined if any of the arguments is not provided", () => {
-      expect(divide(4)).toEqual(undefined);
-      expect(divide()).toEqual(undefined);
-      expect(divide(undefined, 2)).toEqual(undefined);
+      expect(calculateArea(4)).toEqual(undefined);
+      expect(calculateArea()).toEqual(undefined);
+      expect(calculateArea(undefined, 2)).toEqual(undefined);
     });
 
     it("Should return undefined if any of the arguments is not a number", () => {
-      expect(divide(4, "2")).toEqual(undefined);
-      expect(divide("20", 4)).toEqual(undefined);
-      expect(divide("6", "3")).toEqual(undefined);
+      expect(calculateArea(4, "2")).toEqual(undefined);
+      expect(calculateArea("20", 4)).toEqual(undefined);
+      expect(calculateArea("6", "3")).toEqual(undefined);
     });
   });
 });
