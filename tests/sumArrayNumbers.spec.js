@@ -29,10 +29,5 @@ describe("Iteration 5", () => {
             expect(sumArrayNumbers([])).toEqual(0);
         });
 
-        // it("the array should contain numbers", () => {
-        //     expect(sumArrayNumbers([ "a", "2"])).toEqual(undefined)
-        //     expect(sumArrayNumbers([ "1", 2])).toEqual(undefined)
-        // });
-
     })    
 })
