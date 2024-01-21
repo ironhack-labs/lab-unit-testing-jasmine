@@ -23,9 +23,9 @@ describe("Iteration 2", () => {
         });
 
         it("should return undefined if any of the two arguments is not a number.", () => {
-            expect(add("5", true)).toEqual(undefined);
-            expect(add("4", "5")).toEqual(undefined);
-            expect(add("4", 5)).toEqual(undefined)
+            expect(divide("5", true)).toEqual(undefined);
+            expect(divide("4", "5")).toEqual(undefined);
+            expect(divide("4", 5)).toEqual(undefined)
           });
 
     })    
