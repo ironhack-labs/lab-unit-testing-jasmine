@@ -3,5 +3,9 @@ function add (numOne, numTwo) {
         return undefined;
     }
 
+    if (numOne == "" || numTwo == "") {
+        return undefined;
+    }
+
     return numOne + numTwo;
 }
