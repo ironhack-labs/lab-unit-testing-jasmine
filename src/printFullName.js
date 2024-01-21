@@ -11,8 +11,6 @@ function printFullName(person) {
       return undefined
     }
     
-  console.log(person.firstName);
-  console.log(person.lastName);
 
   return `${person.firstName} ${person.lastName}`;
 }
@@ -22,5 +20,5 @@ let customObject = {
   lastName: "Stevens",
 };
 
-let mias;
-console.log(printFullName(customObject));
+
+
