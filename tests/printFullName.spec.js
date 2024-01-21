@@ -36,8 +36,8 @@ describe("Iteration 4", () => {
 
 
         it("should return a string with the first name and last name separated by a space", () => {
-            expect(printFullName({firstName: "Max", surname: "Light"})).toEqual("Max Light");
-            expect(printFullName({firstName: "Can", surname: "Asikoglu"})).toEqual("Can Asikoglu");
+            expect(printFullName({firstName: "Max", lastName: "Light"})).toEqual("Max Light");
+            expect(printFullName({firstName: "Can", lastName: "Asikoglu"})).toEqual("Can Asikoglu");
         });
 
     })    
