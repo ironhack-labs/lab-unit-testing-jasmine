@@ -6,7 +6,7 @@ describe("Iteration 2", () => {
             expect(divide).toBeDefined();
         });
         
-        it("should take two numbers as arguments", () => {
+        it("should take two arguments", () => {
             expect(divide.length).toBe(2);
         });
 
@@ -21,6 +21,12 @@ describe("Iteration 2", () => {
            expect(divide()).toEqual(undefined);
            expect(divide(undefined, 1)).toEqual(undefined);
         });
+
+        it("should return undefined if any of the two arguments is not a number.", () => {
+            expect(add("5", true)).toEqual(undefined);
+            expect(add("4", "5")).toEqual(undefined);
+            expect(add("4", 5)).toEqual(undefined)
+          });
 
     })    
 })
