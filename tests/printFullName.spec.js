@@ -1,7 +1,5 @@
 // UNCOMMENT THE CODE BELOW TO START
 
-/*
-
 describe("Iteration 4", () => {
     describe("Function - printFullName", () => {
         
@@ -10,5 +8,3 @@ describe("Iteration 4", () => {
 
     })    
 })
-
-*/
