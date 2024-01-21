@@ -1,3 +1,5 @@
-function printFullName() {
-    
+function printFullName(person) {
+
 }
+
+
