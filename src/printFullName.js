@@ -1,9 +1,9 @@
-function printFullName(objName) {
-    if(typeof objName !== "object"){
-        return undefined
-    }
-    if ( typeof objName.firstName !== "string" || typeof obj.lastName !== "string"){
+function printFullName(obj) {
+    if(typeof obj !== "object"){
         return undefined;
     }
-    return objName.firstName + " " + objName.lastName;
+    if ( typeof obj.firstName !== "string" || typeof obj.lastName !== "string"){
+        return undefined;
+    }
+    return obj.firstName + " " + obj.lastName;
 }

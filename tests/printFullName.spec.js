@@ -33,18 +33,6 @@ describe("Iteration 4", () => {
             expect(printFullName({firstName:1, lastName:"lastName"})).toEqual(undefined);
             expect(printFullName({firstName:"firstName", lastName:1})).toEqual(undefined);
             expect(printFullName({firstName:1, lastName:1})).toEqual(undefined);
+        })
     })    
 })
-
-
-
-
-
-/* 
-
-
-
-
-
-
-*/
