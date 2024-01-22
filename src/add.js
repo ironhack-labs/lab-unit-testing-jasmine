@@ -1,7 +1,15 @@
-function add (numOne, numTwo) {
+function add(numOne, numTwo) {
     if (numOne == undefined || numTwo == undefined) {
         return undefined;
     }
 
-    return numOne + numTwo;
+    else if (add.length === 2) {
+        return numOne + numTwo
+    }
+
+    else if (numOne !== Number || numTwo !== Number) {
+        return undefined
+    }
 }
+
+const numbers = [1, 2]
