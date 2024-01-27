@@ -19,6 +19,20 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+      
+      it("should return undefined if any of the two arguments is not a number", () => {
+      expect(add(1, "string")).toBe(undefined);
+      expect(add("string", 1)).toBe(undefined);
+      expect(add("string")).toBe(undefined);
+      });
+
     });
   });
   
+ /* describe ("function centsToDecimals", () => { 
+it("should convert value from cents to floating point number with 2 decimals", () => {
+expect(centsToDecimals(105)).toBe(1.05);
+expect(centsToDecimals(23)).toBe(0.23);
+});
+
+  }); */
