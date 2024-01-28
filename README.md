@@ -111,18 +111,22 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 
 1. How many tests are there for the `add` function in the `add.spec.js` file?
 
-
+4
 
 2. How are the blocks `describe` and `it` being used in the tests? What is the purpose of each?
-
+Si , 
+Describe llama a la funcion que queremos probar en el test como argumento y llama a otra funcion para que realice el test.
+It indica que prueba estamos haciendo en el test o que es lo que queremos probar que funcione bien.
 
 
 3. How are the test descriptions phrased? Are there any keywords that stand out?
-
+Como string y indicando un mensaje de los que tiene que probar el test. 
+Describe, it y expect. 
 
 
 4. What do the `expect` functions do, and what input do they take?
-
+Es el que realiza la prueba de nuestra funcion, para intentar igualarla a algo o darle  un valor. 
+Retorna el resultado que esperas de tu funcion con un toBe 
 <br>
 
 
