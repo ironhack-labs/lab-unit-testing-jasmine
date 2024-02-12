@@ -20,6 +20,7 @@ describe("Iteration 2", () => {
             expect (divide(1,"2")).toEqual(undefined);
             expect (divide("3", 4)).toEqual(undefined);
             expect ( divide("100", "47")) .toEqual(undefined);
+            expect(divide()).toBe(undefined);
         });
     })    
 })
