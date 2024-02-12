@@ -16,8 +16,8 @@ describe("Iteration 3", () => {
         });
 
         it("should return a number representing the area of a rectangle (the product of the two arguments)", () => {
-            expect(calculateArea(2,4)).toEqual(8);});
-            expect(calculateArea(2,10)).toEqual(20);});
+            expect(calculateArea(2,4)).toEqual(8);
+            expect(calculateArea(2,10)).toEqual(20);
             expect(calculateArea(4,4)).toEqual(16);
         })
 
@@ -26,3 +26,5 @@ describe("Iteration 3", () => {
             expect(calculateArea()).toEqual(undefined);
             expect(calculateArea(undefined, 1)).toEqual(undefined);
     })
+})
+})
