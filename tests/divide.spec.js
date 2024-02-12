@@ -9,7 +9,7 @@ describe("Iteration 2", () => {
         });
 
         it(" should take two numbers as arguments.", () => {
-            expect(add.length).toBe(2)
+            expect(divide.length).toBe(2)
         });
 
         it("should return the division of the two numbers.", () => {
