@@ -19,6 +19,18 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+
+      it("should return undefined if any of the arguments are not a number", () => {
+        expect(add("a",2)).toEqual(undefined);
+        expect(add(1,"b")).toEqual(undefined);
+        expect(add("a","b")).toEqual(undefined);
+      })
+
     });
   });
   
+
+  // 1. 8
+  // 2. They describe the test and what the function should do.
+  // 3. The "describe" gives the name of the funcion and the first argument of "it" tells us what the function "should" do.
+  // 4. The give us the expectations for the test. The input is one argument to be tested.
