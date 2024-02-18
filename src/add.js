@@ -5,3 +5,6 @@ function add (numOne, numTwo) {
 
     return numOne + numTwo;
 }
+
+// Test cases
+//console.log(add(0, null));
