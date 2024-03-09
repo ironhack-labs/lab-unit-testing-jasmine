@@ -294,55 +294,9 @@ Remember to follow the Red-Green-Refactor cycle: **(1)** first write the tests t
 
 <br>
 
-
 ----
 
-
-### Bonus: Iteration 4 | Print Full Name
-
-In this iteration, your task is to write the unit tests for the **`printFullName`** function and then implement the function.
-
-Files:  **tests** - `tests/printFullName.spec.js`  |  **code** - `src/printFullName.js`
-
-<br>
-
-
-
-Here are the requirements for the `printFullName` function:
-- The function should be defined.
-- The function should take one argument of type object. The object should have two properties: `firstName` and `lastName`.
-- The function should return a string with the *first name* and the *last name* separated by a space.
-- In case the argument passed is not an object, the function should return `undefined`.
-- In case the `firstName` or `lastName` properties are not provided, the function should return `undefined`.
-
-<br>
-
-<details>
-
-  <summary><b>Solution</b></summary>
-
-  <p align="center">
-    <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/printfullname-spec.png" alt="printfullname tests solution"  width="850">
-  </p>
-
-  <br>
-
-  <p align="center">
-    <img  src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/printfullname.png" alt="printfullname solution" width="850">
-  </p>
-
-  <br>
-
-  <hr>
-
-</details>
-
-<br>
-
-
-----
-
-### Bonus: Iteration 5 | Sum Array Numbers
+### Bonus: Iteration 4 | Sum Array Numbers
 
 In this iteration, your task is to write the unit tests for the `sumArrayNumbers` function and then implement the function.
 
