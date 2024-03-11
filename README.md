@@ -249,7 +249,7 @@ Here are the steps you should follow:
 ----
 
 
-### Iteration 3 | Calculate Area
+### Bonus: Iteration 3 | Calculate Area
 
 Following the same process as in the previous iteration, write the unit tests for the **`calculateArea`** function and then implement the function.
 
@@ -293,50 +293,6 @@ Remember to follow the Red-Green-Refactor cycle: **(1)** first write the tests t
 </details>
 
 <br>
-
-----
-
-### Bonus: Iteration 4 | Sum Array Numbers
-
-In this iteration, your task is to write the unit tests for the `sumArrayNumbers` function and then implement the function.
-
-
-
-Files:  **tests** - `tests/sumArrayNumbers.spec.js`  |  **code** - `src/sumArrayNumbers.js`
-
-<br>
-
-Here are the requirements for the `sumArrayNumbers` function:
-- The function should be defined.
-- The function should take one argument of type array. The array should contain numbers.
-- The function should return the sum of all numbers in the array.
-- In case the argument passed is not an array, the function should return `undefined`.
-- In case the argument passed is an empty array, the function should return `0`.
-
-<br>
-
-<details>
-
-  <summary><b>Solution</b></summary>
-
-  <p align="center">
-    <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/sumarraynumbers-spec.png" alt="sumarraynumbers tests solution" width="850">
-  </p>
-
-  <br>
-
-  <p align="center">
-    <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-unit-testing-jasmine/sumarraynumbers.png" alt="sumarraynumbers solution" width="850">
-  </p>
-
-  <br>
-
-  <hr>
-
-</details>
-
-<br>
-
 
 <br>
 
