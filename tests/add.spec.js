@@ -21,8 +21,8 @@ describe("Iteration 1 | Getting Started", () => {
     });
 
     it("should return undefined if any of the arguments is not a number", () => {
-      expect(typeof add()).not.toBe("number");
-      expect(add("one", "two")).toEqual(undefined);
+      expect(add("1", 2)).toBeUndefined();
+      expect(add(2, "two")).toEqual(undefined);
   });
 
     });
