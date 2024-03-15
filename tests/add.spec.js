@@ -7,6 +7,12 @@ describe("Iteration 1 | Getting Started", () => {
       it("should take two arguments", () => {
         expect(add.length).toBe(2);
       });
+
+      it("should return undefined if any of the two arguments is not a number", () => {
+        expect(add(1, "2")).toEqual(undefined);
+        expect(add("1", 2)).toEqual(undefined);
+        expect(add("1", "2")).toEqual(undefined);
+      })
   
       it("should return the sum of the two numbers", () => {
         expect(add(1, 2)).toEqual(3);
