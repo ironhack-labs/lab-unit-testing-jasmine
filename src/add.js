@@ -3,5 +3,7 @@ function add (numOne, numTwo) {
         return undefined;
     }
 
+    if (typeof numOne != "number" || typeof numTwo)
+
     return numOne + numTwo;
 }
