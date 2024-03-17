@@ -1,4 +1,4 @@
-describe("Iteration 4 |minus", () => {
+describe("Iteration 4 |calculateDifferences", () => {
     describe("Function minus", () => {
       it("should be defined", () => {
         expect(minus).toBeDefined();
@@ -8,10 +8,10 @@ describe("Iteration 4 |minus", () => {
         expect(minus.length).toBe(2);
       });
   
-      it("should return the sum of the two numbers", () => {
-        expect(minus(1, 2)).toEqual(1);
-        expect(minus(3, 4)).toEqual(1);
-        expect(minus(100, 47)).toEqual();
+      it("should return the remainder of the two numbers", () => {
+        expect(minus(1, 2)).toEqual(-1);
+        expect(minus(3, 7)).toEqual(-4);
+        expect(minus(50, 100)).toEqual(-50);
       });
   
       it("should return undefined if any of the arguments is not provided", () => {
