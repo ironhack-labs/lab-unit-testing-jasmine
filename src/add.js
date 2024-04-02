@@ -1,7 +1,10 @@
-function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
-        return undefined;
-    }
+function add(numOne, numTwo) {
+  if (numOne == undefined || numTwo == undefined) {
+    return undefined;
+  }
 
-    return numOne + numTwo;
+  if (isNaN(numOne) || isNaN(numTwo)) {
+    return undefined;
+  }
+  return numOne + numTwo;
 }
