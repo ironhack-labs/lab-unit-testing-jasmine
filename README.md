@@ -159,7 +159,7 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 
 **Refactor**
 
-9. Take another look at the `add` function. Is there anything that could be improved? Could you somehow simplify the code to make it easier to read? 🟠<br>
+9. Take another look at the `add` function. Is there anything that could be im"proved? Could you somehow simplify the code to make it easier to read? 🟠<br>
 9. After you are done refactoring, check the tests one last time to make sure everything is still working fine after refactoring. 
 
 
