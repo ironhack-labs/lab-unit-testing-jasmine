@@ -1,7 +1,9 @@
 function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
+    if (typeof numOne !== 'number' || typeof numTwo !== 'number' || isNaN(numOne) || isNaN(numTwo)) {
         return undefined;
-    }
+    }  
 
     return numOne + numTwo;
 }
+
+add(undefined, 35);
