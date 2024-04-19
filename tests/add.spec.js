@@ -19,6 +19,15 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+
+      it("should return undefined if any of the arguments is NaN", () => {
+        expect(add(5, 10)).not.toBeUndefined();
+        expect(add(5, NaN)).toBeUndefined();
+        expect(add(NaN, 10)).toBeUndefined();
+        expect(add("hello", 10)).toBeUndefined();
+        expect(add(5, "word")).toBeUndefined();
+        expect(add("hello", "word")).toBeUndefined();
+      });
     });
   });
   
