@@ -19,6 +19,10 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+
+      it("Should check the arguments are number",()=>{
+        expect(add(2 , '3')).toEqual(5);
+      })
     });
   });
   
