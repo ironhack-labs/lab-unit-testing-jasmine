@@ -1,7 +1,12 @@
-function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
+function add(num1, num2) {
+    if (num1 == undefined || num2 == undefined) {
+        return undefined;
+    }
+    else if (typeof(num1) !== 'number' || typeof(num2) !== 'number') {
         return undefined;
     }
 
-    return numOne + numTwo;
+    return num1 + num2;
 }
+
+console.log(add(1,"a"));
