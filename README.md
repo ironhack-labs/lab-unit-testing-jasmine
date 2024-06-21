@@ -34,7 +34,7 @@ Upon completion of this exercise, you will be able to:
 In this lab, you will practice writing JavaScript programs following the TDD (Test-Driven Development) approach. You will be given a series of functions that you will need to implement. For each function, your task will be first to write the unit tests and then implement the function.
 <br>
 
-Let's do some unit testing! 🧪 
+Let's do some unit testing! 🧪
 
 <br>
 
@@ -88,7 +88,7 @@ If you need a refresher on the Jasmine syntax, check this [*Jasmine Tutorial*](h
 During each iteration, your task will be first to write the unit tests and then implement the function. To make the process easier, you should follow the Red-Green-Refactor cycle:
 
 - 🔴 **Red**: Write a test first and watch it fail.
-- 🟢 **Green**: Write the code to make the test pass. 
+- 🟢 **Green**: Write the code to make the test pass.
 - 🟠 **Refactor**: Improve your code if needed and make sure all tests still pass.
 
 <br>
@@ -111,17 +111,25 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 
 1. How many tests are there for the `add` function in the `add.spec.js` file?
 
+4 tests
+
 
 
 2. How are the blocks `describe` and `it` being used in the tests? What is the purpose of each?
+1 block of describe and 4 of it.
 
+The describe block is used to group the tests that are related to the same function. The it block is used to define a single test case. It is used to test the expected behavior of the function under a specific condition.
 
 
 3. How are the test descriptions phrased? Are there any keywords that stand out?
 
+The test descriptions are phrased in a way that describes the expected behavior of the function under a specific condition. The keywords that stand out are `expect` and `toEqual`.
+
 
 
 4. What do the `expect` functions do, and what input do they take?
+
+The expect function is used to define the expectations for the test. It takes one argument, which is the value that we want to test. To define the expectation, we use matchers, which are functions.
 
 <br>
 
@@ -149,7 +157,7 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 
 
 
-**Write the Code to Make the Test Pass** 
+**Write the Code to Make the Test Pass**
 
 8. Update the code of the `add` function to make the new test pass.<br>Once you correctly implement the new functionality, the test should turn green 🟢.
 
@@ -160,7 +168,7 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 **Refactor**
 
 9. Take another look at the `add` function. Is there anything that could be improved? Could you somehow simplify the code to make it easier to read? 🟠<br>
-9. After you are done refactoring, check the tests one last time to make sure everything is still working fine after refactoring. 
+9. After you are done refactoring, check the tests one last time to make sure everything is still working fine after refactoring.
 
 
 
@@ -310,7 +318,7 @@ Happy coding! 💙
 
   If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear question about the specific issue you are facing. This will help you narrow down the problem and come up with potential solutions.
 
-  For example, is it a concept that you don't understand, or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources. 
+  For example, is it a concept that you don't understand, or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources.
 
   Once you have a clear understanding of the problem, you will be able to start working toward the solution.
 
