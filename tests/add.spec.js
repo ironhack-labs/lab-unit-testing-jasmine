@@ -19,6 +19,26 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+
+      it("should return undefined if any of the argument is not a number", () => {
+        expect(add(1, "2")).toEqual(undefined);
+        expect(add("3", 4)).toEqual(undefined);
+        expect(add("100", "47")).toEqual(undefined);
+      });
     });
   });
+
+  describe("Function divide", () => {
+    it("should be defined", () => {
+      expect(divide).toBeDefined();
+    });
+    it("should take two arguments", () =>{
+      expect(divide.length).toBe(2),
+    });
+    it("should return the division of the two numbers", () => {
+      expect(divide(1,2)).toEqual(0.5);
+      expect(divide(3,4)).toEqual(0.75);
+      expect(divide (undefined,50)).toEqual(2);
+    });
+  })
   
