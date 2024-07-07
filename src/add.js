@@ -1,5 +1,8 @@
-function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
+function add(numOne, numTwo) {
+    if ((!numOne || !numTwo)) {
+        return undefined;
+    }
+    if (typeof numOne !== "number" || typeof numTwo !== "number") {
         return undefined;
     }
 
