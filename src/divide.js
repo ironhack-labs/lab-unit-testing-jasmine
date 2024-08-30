@@ -1,3 +1,7 @@
-function divide () {
-       
+function divide(numOne, numTwo) {
+  if (numOne == undefined || numTwo == undefined || typeof numOne === 'string' || typeof numTwo === 'string') {
+      return undefined;
+  }
+  return numOne / numTwo;
 }
+console.log(divide(4,2)) 
