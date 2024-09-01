@@ -1,7 +1,7 @@
-function add (numOne, numTwo) {
+let add = (numOne, numTwo) => {
     if (numOne == undefined || numTwo == undefined) {
         return undefined;
     }
-
     return numOne + numTwo;
-}
+    
+};
