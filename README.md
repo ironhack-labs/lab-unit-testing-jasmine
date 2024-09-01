@@ -110,18 +110,20 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 **Review the Tests**
 
 1. How many tests are there for the `add` function in the `add.spec.js` file?
-
+4 tests
 
 
 2. How are the blocks `describe` and `it` being used in the tests? What is the purpose of each?
-
+The purpose is to show the text that describe the testing and starts the function that test that line.
 
 
 3. How are the test descriptions phrased? Are there any keywords that stand out?
+They are phraed as question with boleans answers a auxiliary verb tat calls a verb related to the result of the testing line. The keywords are "should" "return" "if" "defined" 
 
 
 
 4. What do the `expect` functions do, and what input do they take?
+Expect calls a method, place a parametes and compare its to an expected result. Thought the anserr would be always true or false. 
 
 <br>
 
