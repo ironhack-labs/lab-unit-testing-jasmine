@@ -110,18 +110,23 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 **Review the Tests**
 
 1. How many tests are there for the `add` function in the `add.spec.js` file?
-
+4 tests
 
 
 2. How are the blocks `describe` and `it` being used in the tests? What is the purpose of each?
+The blocks are made in oders to test different scenarious of the code. In which it could be succesfull and it which it could fail.
 
 
 
 3. How are the test descriptions phrased? Are there any keywords that stand out?
+The drescriptions are teeling exactly what the test is trying to verify.
 
 
 
 4. What do the `expect` functions do, and what input do they take?
+
+  The expect functions are used to define the expectation for the test. They are paired with matchers that have specific functions depending on what you are trying to verify.
+
 
 <br>
 
@@ -130,6 +135,8 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 **Review the Code**
 
 5. Review the `add` function (in the `src/add.js` file) to understand how functionality is implemented and how it relates to the tests.
+The add function is waiting for two arguments that are then its parameters. Then quickly asseses in an if statement if either number is not defined just return undefined, but if we have two numbers return the sum.
+
 
 <br>
 
@@ -161,6 +168,8 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 
 9. Take another look at the `add` function. Is there anything that could be improved? Could you somehow simplify the code to make it easier to read? 🟠<br>
 9. After you are done refactoring, check the tests one last time to make sure everything is still working fine after refactoring. 
+
+
 
 
 
