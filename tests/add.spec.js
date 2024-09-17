@@ -18,6 +18,9 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add(1)).toEqual(undefined);
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
+        expect(add("Hello",1)).toEqual(undefined);
+        expect(add(2, "Hello")).toEqual(undefined);
+        expect(add("World", "Hello")).toEqual(undefined);
       });
     });
   });
