@@ -11,7 +11,7 @@
 
 
 <details>
-  <summary>
+  <summary>2
    <h2>Learning Goals</h2>
   </summary>
 
