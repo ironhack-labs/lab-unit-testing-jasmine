@@ -19,6 +19,10 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+
+      it("Should return undefined if any of the two aruments is not a number", () => {
+        expect(add(" "," ")).toEqual(undefined);
+      });
     });
   });
   
