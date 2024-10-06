@@ -12,6 +12,7 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add(1, 2)).toEqual(3);
         expect(add(3, 4)).toEqual(7);
         expect(add(100, 47)).toEqual(147);
+        
       });
   
       it("should return undefined if any of the arguments is not provided", () => {
@@ -19,6 +20,13 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+
+      it("should return undefined if any of the arguments is not a number", () => {
+        expect(add("string",10)).toEqual(undefined);
+        expect(add(11,"stringTest")).toEqual(undefined);
+        expect(add("54","stringTest")).toEqual(undefined);
+      });     
+
     });
   });
   
