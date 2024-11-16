@@ -1,3 +1,3 @@
-function calculateArea() {
-
+function calculateArea(a, b) {
+ return a * b;
 }
