@@ -19,6 +19,18 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+
+      describe("add", function() {
+        it("should add two numbers correctly", function() {
+          expect(add(1, 2)).toBe( 3);
+        });
+      
+        it("should return undefined if either argument is not a number", function() {
+          expect(add(1, "2")).toBeUndefined(); // "2" is not a number
+          expect(add("1", 2)).toBeUndefined(); // "1" is not a number
+          expect(add("a", "b")).toBeUndefined(); // both are not numbers
+        });
+      });
     });
   });
   
