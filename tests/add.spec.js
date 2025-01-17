@@ -19,6 +19,15 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+
+      // there are total of 4 tests
+      // the describe is nested 
+      // expect compares the function with argument and expected outputs
+      it("The function should return undefined if any of the two arguments is not a number.",()=>{
+        expect(add(1,"asd")).toEqual(undefined);
+        expect(add("asd",1)).toEqual(undefined);
+        expect(add("asd","asd")).toEqual(undefined);
+      });
     });
   });
   
