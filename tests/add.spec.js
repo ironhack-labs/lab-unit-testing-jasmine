@@ -19,6 +19,13 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+
+      it("Alguno de los dos argumentos no es un numero", () => {
+        expect(add("1",1)).toEqual(undefined);
+        expect(add(1,"1")).toEqual(undefined);
+        expect(add("1","1")).toEqual(undefined);
+      })
     });
   });
+
   
