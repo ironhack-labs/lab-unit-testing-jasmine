@@ -1,5 +1,5 @@
 function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
+    if (!Number.isFinite(numOne) || !Number.isFinite(numTwo)) {
         return undefined;
     }
 
