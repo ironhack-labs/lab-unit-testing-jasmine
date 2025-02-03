@@ -1,7 +1,7 @@
 describe("Iteration 1 | Getting Started", () => {
     describe("Function add", () => {
-      it("should be defined", () => {
-        expect(add).toBeDefined();
+      it("should return undefined if any of the two arguments is not a number", () => {
+        expect(add('words', null)).toEqual();
       });
   
       it("should take two arguments", () => {
