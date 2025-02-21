@@ -111,17 +111,21 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 
 1. How many tests are there for the `add` function in the `add.spec.js` file?
 
-
+> 8 tests (counting the "expects") 
 
 2. How are the blocks `describe` and `it` being used in the tests? What is the purpose of each?
 
-
+> describe: groups related tests
+> it: contains an individual test case 
+> multiple it blocks can exist within one describe block
 
 3. How are the test descriptions phrased? Are there any keywords that stand out?
 
-
+> is always in quotes and starts with "should" and is telling us its expectations
 
 4. What do the `expect` functions do, and what input do they take?
+
+> shows the expected input and output 
 
 <br>
 
