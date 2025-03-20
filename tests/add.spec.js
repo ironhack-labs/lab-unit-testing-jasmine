@@ -21,4 +21,3 @@ describe("Iteration 1 | Getting Started", () => {
       });
     });
   });
-  
