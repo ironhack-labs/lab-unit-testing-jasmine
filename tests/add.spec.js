@@ -15,10 +15,24 @@ describe("Iteration 1 | Getting Started", () => {
       });
   
       it("should return undefined if any of the arguments is not provided", () => {
-        expect(add(1)).toEqual(undefined);
-        expect(add()).toEqual(undefined);
-        expect(add(undefined, 1)).toEqual(undefined);
+        expect(add(1,"2")).toEqual(undefined);
+        expect(add("93",4)).toEqual(undefined);
+        expect(add( 100,"47")).toEqual(undefined);
       });
+      
+      it('should return undefined if any argument is not a number', () => {
+        expect(add(9, 'y')).toBeUndefined();
+        expect(add('h', 8)).toBeUndefined();
+        expect(add(null, 3)).toBeUndefined();
+        expect(add(1, undefined)).toBeUndefined();
     });
-  });
+    function add(num1, num2) {
+      if (typeof num1!== 'number' || typeof num2 !== 'number') {
+          return undefined;
+      }
+      let result = num1 + num2;
+      return result;
+  }
   
+}); 
+  });
