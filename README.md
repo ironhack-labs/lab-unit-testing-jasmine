@@ -126,7 +126,6 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 <br>
 
 
-
 **Review the Code**
 
 5. Review the `add` function (in the `src/add.js` file) to understand how functionality is implemented and how it relates to the tests.

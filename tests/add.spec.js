@@ -22,3 +22,10 @@ describe("Iteration 1 | Getting Started", () => {
     });
   });
   
+  // Test iteration 1.6 
+  it ("should return undefined if any of the arguments is not a number",()=>{
+    
+    expect( add(1 , "2") ).toEqual(undefined);
+    expect( add("3" , 4) ).toEqual(undefined)
+    expect( add("100" , "47") ).toEqual(undefined)
+  })
