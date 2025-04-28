@@ -3,5 +3,8 @@ function add (numOne, numTwo) {
         return undefined;
     }
 
+    if (isNaN(numOne) || isNaN(numTwo)) {
+        return undefined;
+    }
     return numOne + numTwo;
 }
