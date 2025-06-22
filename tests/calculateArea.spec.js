@@ -21,10 +21,10 @@ describe("Iteration 3 | Calculate Area", () => {
         });
 
         it("should return undefined if any of the arguments is not a number", () => {
-            expect(add(1, "1")).toEqual(undefined);
-            expect(add("1", 1)).toEqual(undefined);
-            expect(add(true, 1)).toEqual(undefined);
-            expect(add(1, true)).toEqual(undefined);
+            expect(calculateArea(1, "1")).toEqual(undefined);
+            expect(calculateArea("1", 1)).toEqual(undefined);
+            expect(calculateArea(true, 1)).toEqual(undefined);
+            expect(calculateArea(1, true)).toEqual(undefined);
     });
 
 
