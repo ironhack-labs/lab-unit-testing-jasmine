@@ -3,6 +3,13 @@ describe("Iteration 1 | Getting Started", () => {
       it("should be defined", () => {
         expect(add).toBeDefined();
       });
+      it("should return undefined if one or both inputs are not numbers", function () {
+  expect(add("5", 10)).toBeUndefined();
+  expect(add(5, "10")).toBeUndefined();
+  expect(add(true, 10)).toBeUndefined();
+  expect(add(5, undefined)).toBeUndefined();
+});
+
   
       it("should take two arguments", () => {
         expect(add.length).toBe(2);
