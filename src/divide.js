@@ -1,3 +1,1 @@
-function divide () {
-       
-}
+function divide(a, b) {}
