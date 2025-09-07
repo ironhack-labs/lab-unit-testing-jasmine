@@ -1,7 +1,11 @@
-function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
-        return undefined;
-    }
-
+function add(numOne, numTwo) {
+  if (numOne == undefined || numTwo == undefined) {
+    return undefined;
+  } else if (typeof numOne == "number" && typeof numTwo == "number") {
     return numOne + numTwo;
+  } else {
+    return undefined;
+  }
 }
+
+console.log(add(1, 2));
