@@ -1,7 +1,17 @@
-function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
+function add(numOne, numTwo) {
+   
+    if (!numOne || !numTwo)   {
         return undefined;
     }
 
-    return numOne + numTwo;
+   else if (!numOne && !numTwo)   {
+        return undefined;
+    }
+
+
+else {
+  return numOne + numTwo;}
+
 }
+
+add(5,7);
