@@ -19,6 +19,22 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+
+      it("should return undefined if any of the two arguments is not a number", () => {
+        expect( add(1, "2") ).toEqual(undefined);
+        expect( add("3", 4) ).toEqual(undefined);
+        expect( add("100", "47") ).toEqual(undefined);
+    });
     });
   });
   
+
+  // 1) 8 add tests
+
+  // 2) describe: initiates group test for several units
+  //    it: initiates a single unit test
+
+  // 3) keywords: expect, toBeDefined, toBe, toEqual, 
+  // descriptions phrased: they tell you what the code you have written is expected to do
+
+  // 4) expect: takes a function as input, declares what output is expected if you run it
