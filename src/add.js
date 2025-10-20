@@ -1,5 +1,6 @@
 function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
+    
+    if (typeof numOne === "string"  || typeof numTwo === "string" || numOne == undefined || numTwo == undefined) {
         return undefined;
     }
 
