@@ -111,17 +111,25 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 
 1. How many tests are there for the `add` function in the `add.spec.js` file?
 
+4
 
 
 2. How are the blocks `describe` and `it` being used in the tests? What is the purpose of each?
 
+-First bloc is used to take the expect as the function parameters.
+-Second block check that the parameters are 2.
+-Third block: if the parameters are added, it returns the sum of the two parameters.
+-Fourth Block, if one of the parameters does not match any number returns 'undefined'
 
 
 3. How are the test descriptions phrased? Are there any keywords that stand out?
 
-
+-"should be defined" - "should take two arguments" - "should return the sum of the two numbers" - "should return undefined if any of the arguments is not provided"
+-Describe, IT, Expect, Tobe
 
 4. What do the `expect` functions do, and what input do they take?
+
+The recieve the partameters from the function 'Add' we have on the JS file.
 
 <br>
 
