@@ -1,7 +1,7 @@
 describe("Iteration 1 | Getting Started", () => {
     describe("Function add", () => {
       it("should be defined", () => {
-        expect(add).toBeDefined();
+        expect(add).toBeDefined("funcion");
       });
   
       it("should take two arguments", () => {
@@ -15,9 +15,9 @@ describe("Iteration 1 | Getting Started", () => {
       });
   
       it("should return undefined if any of the arguments is not provided", () => {
-        expect(add(1)).toEqual(undefined);
-        expect(add()).toEqual(undefined);
-        expect(add(undefined, 1)).toEqual(undefined);
+        expect(add(1, "23")).toEqual(undefined);
+        expect(add("30", 10)).toEqual(undefined);
+        expect(add("10", "1")).toEqual(undefined);
       });
     });
   });
