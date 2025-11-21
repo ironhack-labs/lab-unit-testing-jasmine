@@ -111,18 +111,19 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 
 1. How many tests are there for the `add` function in the `add.spec.js` file?
 
-
+Answer: There are total 4 tests.
 
 2. How are the blocks `describe` and `it` being used in the tests? What is the purpose of each?
 
-
+Answer: `describe` block group tests together into a test suits and `it` defines individual test cases.
 
 3. How are the test descriptions phrased? Are there any keywords that stand out?
 
-
+Answer: Test desctiption should be self explanatory containing keywords like `should`, `expect ` and `return`
 
 4. What do the `expect` functions do, and what input do they take?
 
+Answer: `expect` takes one argument: the actual value or expression we want to test. The expect function creates an assertion that checks if a value meets certain conditions. It's the core of Jasmine testing.
 <br>
 
 
