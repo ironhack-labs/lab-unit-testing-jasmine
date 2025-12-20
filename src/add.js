@@ -1,7 +1,6 @@
-function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
-        return undefined;
-    }
-
-    return numOne + numTwo;
+function add(a, b) {
+  if (!Number.isFinite(a) || !Number.isFinite(b)) {
+    return undefined;
+  }
+  return a + b;
 }

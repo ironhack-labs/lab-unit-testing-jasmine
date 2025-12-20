@@ -20,5 +20,11 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add(undefined, 1)).toEqual(undefined);
       });
     });
+      it("should return undefined if any of the two arguments is not a number", function () {
+    expect(add(5, "hello")).toBeUndefined();
+    expect(add("hello", 5)).toBeUndefined();
+    expect(add(NaN, 10)).toBeUndefined();
+    expect(add(10, NaN)).toBeUndefined();
+    expect(add(undefined, 10)).toBeUndefined();});
   });
   
