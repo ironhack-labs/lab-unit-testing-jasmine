@@ -111,17 +111,22 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 
 1. How many tests are there for the `add` function in the `add.spec.js` file?
 
-
+  In the test file (test/add.spec.js) there are 4 test that verifiy the behavior of the add function with different values.
 
 2. How are the blocks `describe` and `it` being used in the tests? What is the purpose of each?
 
+  . describe : group the test related to the same functionality (in this case, the group for the "add" function)
+  . if : defines a individual test case that describe a specific behavior and verifies it against an expectation. 
 
+  Together, "describe" organizes the test, and "it" specifies each behavior that the function must perform
 
 3. How are the test descriptions phrased? Are there any keywords that stand out?
 
-
+  Key words that stand out are "shoudl" and descriptions that indicate what behavior is excepted. This helps to understand what each test does without reading the internal code.
 
 4. What do the `expect` functions do, and what input do they take?
+
+  The "expect()" function creates an expectation or assertion about a result. It takes the current value or result of the function being tested as a parameter, and then chains it with a matcher like ".toBe()" to compare that value with the expected value.
 
 <br>
 
@@ -130,6 +135,8 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 **Review the Code**
 
 5. Review the `add` function (in the `src/add.js` file) to understand how functionality is implemented and how it relates to the tests.
+
+  The "add" function takes two parameters and returns the sum if both are numbers. The tests check the expected result against valid values ​​and expect it to match the correct sum. The current code only adds if the parameters are numbers and fails with other combinations, so the tests reflect this behavior.
 
 <br>
 
@@ -160,7 +167,10 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 **Refactor**
 
 9. Take another look at the `add` function. Is there anything that could be improved? Could you somehow simplify the code to make it easier to read? 🟠<br>
-9. After you are done refactoring, check the tests one last time to make sure everything is still working fine after refactoring. 
+
+  We can keep the implementation simple and readable as is, since the type validation and addition are clear. The code serves its purpose without repetition, and there is no unnecessary logic.
+
+10. After you are done refactoring, check the tests one last time to make sure everything is still working fine after refactoring. 
 
 
 
