@@ -19,6 +19,12 @@ describe("Iteration 1 | Getting Started", () => {
         expect(add()).toEqual(undefined);
         expect(add(undefined, 1)).toEqual(undefined);
       });
+
+      it("should return undefined if one of two arguments are not a number",() => {
+        expect(add(1,undefined)).toBe(undefined);
+        expect(add(undefined,4)).toBe(undefined);
+        expect(add()).toBe(undefined);
+      })
     });
   });
   
