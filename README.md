@@ -110,18 +110,20 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 **Review the Tests**
 
 1. How many tests are there for the `add` function in the `add.spec.js` file?
-
+   There are 4 tests in the file at the start. After adding the new test from this iteration, there are 5 tests in total.
 
 
 2. How are the blocks `describe` and `it` being used in the tests? What is the purpose of each?
-
-
+   The `describe` block is used to group related tests together, so the test file is easier to read and organize. The `it` block is used for one specific test, and each one checks one behavior of the function.
 
 3. How are the test descriptions phrased? Are there any keywords that stand out?
 
+   The test descriptions are written like short sentences. Most of them start with the word `should`, which makes them read like requirements.
 
 
 4. What do the `expect` functions do, and what input do they take?
+
+   The `expect` function is used to check the actual result we get from the code. It takes the real value we want to test, and then we compare it with a matcher like `toEqual()` or `toBeDefined()`.
 
 <br>
 
@@ -130,6 +132,8 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 **Review the Code**
 
 5. Review the `add` function (in the `src/add.js` file) to understand how functionality is implemented and how it relates to the tests.
+
+   The `add` function takes two values and returns their sum. It also checks if one argument is missing, and it returns `undefined` in that case. After the update, it also returns `undefined` if one of the values is not a number. This matches the tests because the tests check the normal sum, missing arguments, and invalid values.
 
 <br>
 
@@ -143,7 +147,7 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 
 
 
-7. To run the tests, open `SpecRunner.html` using the Live Share extension.<br>As per the Red phase of the Red-Green-Refactor cycle, the test should initially fail 🔴 and that is fine!
+7. To run the tests, open `SpecRunner.html` using the Live Server extension.<br>As per the Red phase of the Red-Green-Refactor cycle, the test should initially fail 🔴 and that is fine!
 
 <br>
 
@@ -160,7 +164,7 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 **Refactor**
 
 9. Take another look at the `add` function. Is there anything that could be improved? Could you somehow simplify the code to make it easier to read? 🟠<br>
-9. After you are done refactoring, check the tests one last time to make sure everything is still working fine after refactoring. 
+10. After you are done refactoring, check the tests one last time to make sure everything is still working fine after refactoring. 
 
 
 
