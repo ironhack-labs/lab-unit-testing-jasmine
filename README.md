@@ -111,25 +111,30 @@ Your task in this iteration is to review the unit test in  `tests/add.spec.js` a
 
 1. How many tests are there for the `add` function in the `add.spec.js` file?
 
-
+4 tests.
 
 2. How are the blocks `describe` and `it` being used in the tests? What is the purpose of each?
+ 
+ /*the blocks `describe` groups similar add function tests together. The purpose is to make it easier to read*/
 
-
+/*the `it` block defines each specific test case and the purpose is to make sure it performs the expected behaviour of its function.*/
 
 3. How are the test descriptions phrased? Are there any keywords that stand out?
 
+/*they are phrased simply and clear to read and understand. the keywords 'should', 'expect', 'defined', 'arguments'
 
 
 4. What do the `expect` functions do, and what input do they take?
 
+/* the 'expect' function anticipates how the function should behave and the expected output.*/
 <br>
-
 
 
 **Review the Code**
 
 5. Review the `add` function (in the `src/add.js` file) to understand how functionality is implemented and how it relates to the tests.
+
+/*the 'add' function is implemented to satisfy all the requirements the tests checks for its existence, parameters, returns. */
 
 <br>
 
