@@ -1,14 +1,29 @@
 // UNCOMMENT THE CODE BELOW TO START
 
-/*
 
-describe("Iteration 3", () => {
+
+describe("Iteration 3 | Calculate Area", () => {
     describe("Function - calculateArea", () => {
         
         // Each `it` block represents 1 test. You can use the following as a template:
-        it("", () => {});
+        it("should be defined", () => {
+            expect(calculateArea).toBeDefined();
+        });
+
+        it("should take two numbers as arguments", () => {
+        expect(calculateArea(2, 4)).toBeTruthy();
+        });
+
+        it("should return a number representing the area of a rectangle", () => {
+        expect(calculateArea(10, 2)).toEqual(20);
+        });
+
+        it("should return undefined if any of the arguments is not provided", () => {
+        expect(calculateArea(1)).toEqual(undefined);
+        expect(calculateArea()).toEqual(undefined);
+        expect(calculateArea(undefined, 1)).toEqual(undefined);
+      });
 
     })    
 })
 
-*/
