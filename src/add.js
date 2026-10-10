@@ -5,3 +5,5 @@ function add (numOne, numTwo) {
 
     return numOne + numTwo;
 }
+
+console.log(add('bubbly',`ankit`));
